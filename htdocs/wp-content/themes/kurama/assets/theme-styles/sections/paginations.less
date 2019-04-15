@@ -1,0 +1,35 @@
+/* --------------- pagination ------------ */
+.pagination {
+  margin: 20px 0;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+  clear: both;
+  text-align: center;
+  .nav-links {
+    text-align: center;
+    display: block;
+  }
+  .current {
+    border-bottom: 2px solid @accent;
+    pointer-events: none;
+  }
+  span {
+    pointer-events: none;
+  }
+}
+.pagination .nav-links a, .pagination .nav-links span {
+  padding: 4px 8px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 16px;
+  background-color: none;
+  display: inline-block;
+  color: @onaccent;
+  font-weight: bold;
+  &:hover {
+    border-bottom: 2px solid @accent;
+  }
+
+}

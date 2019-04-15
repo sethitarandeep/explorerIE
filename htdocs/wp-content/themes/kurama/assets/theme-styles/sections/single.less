@@ -1,0 +1,82 @@
+/* Single Posts Area */
+#primary-mono {
+  padding: 0 10px;
+  padding-left: 20px;
+  @media screen and (max-width:767px) {
+    padding-left: 10px;
+  }
+  h1.entry-title {
+    font-weight: bold;
+    color: @onaccent;
+
+    font-size: 34px;
+    margin-top: 0px;
+    padding: 10px;
+    padding-left: 0;
+    margin-bottom: 20px;
+
+  }
+  .entry-meta, .entry-footer {
+    font-size: 12px;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 7px;
+
+    a {
+      color: @content;
+      text-decoration: underline;
+      &:hover {
+        color: @accent;
+      }
+    }
+  }
+  .entry-meta {
+    overflow: visible;
+    border-bottom: none;
+    margin-top: 25px;
+    border-top: solid 1px #eee;
+    padding-top: 10px;
+    .author {
+      display: inline-block;
+      font-weight: normal;
+
+    }
+
+  }
+  .entry-footer {
+    border-top: solid 1px #eee;
+    padding-top: 7px;
+    overflow: auto;
+    .post-edit-link {
+      float: right;
+
+    }
+    .cat-links {
+      margin-right: 6px;
+    }
+  }
+
+  .entry-content {
+    color: @content;
+    line-height: 1.7em;
+    font-size: 15px;
+  }
+}
+
+#primary-mono.page h1.entry-title:after {
+  display: none;
+}
+.edit-link {
+  display: inline-block;
+  float: right;
+}
+.page-header {
+  margin-top: 0px;
+  border-bottom: none;
+  h1 {
+    font-size: 18px;
+    font-weight: lighter;
+    border-bottom: solid 1px #e1e1e1;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+}

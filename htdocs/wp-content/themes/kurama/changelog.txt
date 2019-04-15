@@ -1,0 +1,67 @@
+ChangeLog
+=========
+
+
+Version 0.9*
+
+	i) Initial Release.
+	
+Version 0.91*
+
+	i) Pre release bug fixes.	
+
+Version 0.92
+
+	i) Removed Custom CSS
+	ii) Used wp_add_inline_style for css modifications.
+	iii) Other Pre release bug fixes.
+	iv) Replace with core Pagination function.
+	
+Version 1.0
+
+	i) Fixed bug related to addition of widgets from customizer.
+	ii) Removed unused code.
+	iii) Other minor pre release bug fixes.	
+	
+	
+Version 1.0.1
+
+	i) Bug Fixes.
+	ii) Added pro version link.
+	iii) Added option to hide title/tagline with logo enabled.
+
+Version: 1.0.2
+ `
+    i) Update Framework.`
+    ii) Header Image bug fixed.
+    iii) Add Social Icons styles.
+    iv) Blog Layout bug fixed.
+    v) Added skins.
+    vi) Featured Areas bug fixed.
+    vii) Add Cus custom logo.
+    viii) Footer Menu bug fixed.
+
+Version 1.0.3
+
+	i) Fixed Social Icons
+	ii) Improved Customizer
+	iii) Minor Bug Fixes
+
+Version 1.0.4
+
+	i) Added Full Width Page
+	ii) Added Support for WPForms
+	iii) Improved Customizer
+	iv) Minor Bug Fixes
+
+Version 1.0.5
+
+    i) Fixed Layout
+    ii) Minor Bug Fixes
+
+Version 1.0.6
+
+    i) Gutenberg Ready
+    ii) Social Icon Issues Fixed
+    iii) Minor Bug Fixes
+	

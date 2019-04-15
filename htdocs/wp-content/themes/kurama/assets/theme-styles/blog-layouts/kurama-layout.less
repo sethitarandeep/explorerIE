@@ -1,0 +1,100 @@
+/* Kurama Layout */
+.kurama {
+  margin-bottom: 70px;
+  &:nth-of-type(odd) {
+    clear: left;
+  }
+  .featured-thumb {
+
+  }
+  img {
+    .transition(1s all ease);
+    -webkit-filter: sepia(0%);
+    filter: sepia(0%);
+  }
+
+  .out-thumb {
+    margin-top: 8px;
+    .transition(0.4s all ease);
+
+    .post-meta {
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 11px;
+      padding-left: 2px;
+      transform-origin: top right;
+      .transition(1s all ease);
+      .author {
+        margin-top: 5px;
+        .fa-user {
+          font-size: 11px;
+          color: fade(@content, 70%);
+          position: relative;
+          bottom: 0px;
+          right: 2px;
+        }
+      }
+    }
+    header {
+      border-left: solid 3px @onaccent;
+      position: relative;
+      transform-origin: top left;
+      .transition(1s all ease);
+      &:after {
+        content: "";
+        position: absolute;
+        left: -3px;
+        top:0;
+        bottom: 0;
+        width: 3px;
+        background: @accent;
+        .transition(0.6s all ease 0s);
+        .transform(scaleY(0));
+        transform-origin: top;
+      }
+      @media screen and (min-width: 767px) {
+        &:hover:after {
+          .transform(scaleY(1));
+        }
+      }
+      h3.entry-title {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        a {
+          color: @content;
+          .transition(0.4s all ease);
+          @media screen and (min-width: 767px) {
+            &:hover {
+              color: @accent;
+            }
+          }
+        }
+
+      }
+      .readmore {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: @accent;
+        font-size: 12px;
+      }
+    }
+  }
+  @media screen and (min-width: 767px) {
+    &:hover {
+      img {
+        -webkit-filter: sepia(50%);
+        filter: sepia(50%);
+        .transform(scale(1.02));
+      }
+
+      .out-thumb .post-meta {
+        .transform(scale(1.1));
+      }
+      .out-thumb header {
+        .transform(scale(1.1));
+      }
+    }
+  }
+}

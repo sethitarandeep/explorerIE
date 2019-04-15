@@ -1,0 +1,23 @@
+/* Customizer Styles */
+li#accordion-section-kurama_pro_fa h3,
+#accordion-section-kurama_pro_layout h3,
+#accordion-section-kurama_pro_header h3 {
+  background-color: #3d1c1a !important;
+  color: #d6a150 !important;
+  pointer-events: none;
+  border-left: 0px !important;
+}
+li#accordion-section-kurama_pro_fa h3:after,
+#accordion-section-kurama_pro_layout h3:after,
+#accordion-section-kurama_pro_header h3:after {
+  display: none;
+  content: "";
+}
+#accordion-section-kurama_sec_pro h3 {
+  background-color: #d6a150 !important;
+  color: #3d1c1a !important;
+  border-left: 0px !important;
+}
+#accordion-section-kurama_sec_pro h3:after {
+  color: #3d1c1a !important;
+}

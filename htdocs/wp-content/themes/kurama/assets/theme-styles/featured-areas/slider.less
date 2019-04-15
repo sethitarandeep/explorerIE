@@ -1,0 +1,110 @@
+/* top slider */
+
+.slider-wrapper {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 15px;
+  .nivoSlider {
+    box-shadow: none;
+    border: solid 5px #eee;
+  }
+  .nivo-controlNav {
+    position: relative;
+    bottom: 60px;
+    z-index: 9;
+  }
+  .nivo-caption {
+    bottom: 60px;
+    left: 55px;
+    right: auto;
+    font-family: inherit;
+    background: none;
+    @media screen and (max-width: 600px) {
+      .transform(scale(0.6));
+      bottom: 15px;
+      left: -50px;
+    }
+    a { text-decoration:  none;
+      border-bottom: none; }
+    .slide-title {
+      display: inline-block;
+      font-size: 24px;
+      padding: 10px;
+      background: fade(black, 70%);
+      border-left: solid 4px @accent;
+      font-weight: lighter;
+    }
+    .slide-desc span {
+      background: fade(@accent, 50%);
+      /* border-left: solid 4px black; */
+      display: inline-block;
+      font-size: 16px;
+      padding: 8px;
+    }
+    .slide-cta span {
+      background: fade(black, 70%);
+      font-weight: bold;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 5px;
+      padding: 10px;
+      border-bottom: solid 2px black;
+
+    }
+  }
+}
+
+
+/* sb slider */
+.latest-hap {
+  position: relative;
+}
+.sb-slider {
+  .sb-description {
+    pointer-events: none;
+    z-index: 88;
+    background: fade(black, 40%);
+    border-left-color: @accent;
+    padding: 10px;
+    h3 {
+      margin: 0;
+    }
+
+  }
+}
+.nav-arrows {
+  position: absolute;
+  top: 50%;
+  a {
+    background-color: fade(black,50%);
+    .transition(0.2s all ease);
+    box-shadow: 0px 0px 1px @accent;
+    outline: none;
+    &:hover {
+      background-color: fade(@accent,50%);
+    }
+  }
+  a:first-child {
+    right: -535px;
+    @media screen {
+      @media (max-width: 1199px) {
+        right: -435px;
+      }
+      @media (max-width: 991px) {
+        right: -675px;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  a:nth-child(2) {
+    right: -47px;
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      right: -57px;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

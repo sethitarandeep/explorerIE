@@ -1,0 +1,111 @@
+.body-font {
+  font-family: "Open Sans", sans-serif;
+}
+.title-font {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  .body-font;
+  background: @background;
+  word-wrap: break-word;
+  line-height: 1.8em;
+}
+.mega-container {
+  background: white;
+  margin: auto;
+  margin-top: 20px;
+  overflow: visible;
+}
+a {
+  color: @accent;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: @accent;
+  }
+}
+.container {
+  margin: auto;
+
+  @media screen and (min-width: 1290px) {
+    width: 1270px;
+  }
+}
+
+
+/* section titles */
+.section-title {
+  font-weight: normal;
+  color: @content;
+  font-size: 22px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  .title-font;
+  text-align: center;
+  width: 100%;
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
+  span {
+    background: @background;
+    display: inline-block;
+    position: relative;
+    padding: 0 3px;
+  }
+  span:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 18px;
+    border-top: solid 3px @accent;
+    border-bottom: solid 3px @accent;
+    color: @onaccent;
+    position: absolute;
+    bottom: 7px;
+    left: -15px;
+
+  }
+  span:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 18px;
+    border-top: solid 3px @accent;
+    border-bottom: solid 3px @accent;
+    color: @onaccent;
+    position: absolute;
+    bottom: 7px;
+    right: -15px;
+
+  }
+  div {
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 18px;
+      border-top: solid 4px @onaccent;
+      position: absolute;
+      bottom: 0px;
+      right: -23px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 18px;
+      border-top: solid 4px @onaccent;
+      position: absolute;
+      bottom: 0px;
+      left: -23px;
+    }
+  }
+}
+
+#content {
+  margin-top: 0px;
+}
+
