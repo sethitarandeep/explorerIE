@@ -1,0 +1,110 @@
+.diveInContainer {
+  margin: auto;
+}
+
+.diveInContainer.inner-container {
+  position: relative;
+  min-width: 360px;
+  height: auto;
+  width: 100%;
+  margin: 0 auto ;
+}
+
+.diveInContainer .content {
+  position: absolute;
+	display:none;
+  opacity: 0;
+  top: 2em;
+  left: 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.diveInContainer .diveActive {
+  display: block !important;
+  margin: 0 auto;
+  opacity: 1;
+  transition: ease-in-out 1s;
+}
+
+.diveInContainer .card {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2em 0;
+  height: 590px;
+  box-sizing: border-box;
+  transition: .3s ease;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
+}
+.diveInContainer .card:first-child, .card:nth-child(2) {
+  background: #d4d7d8;
+  height: 8px;
+  border-radius: 5px 5px 0 0;
+  padding: 0;
+  box-shadow: none;
+}
+.diveInContainer .card:first-child {
+  margin: 0 20px;
+  background: #a0a4a5;
+}
+.card:nth-child(2) {
+  margin: 0 10px;
+}
+.diveInContainer .card .progress-container {
+  background: rgba(37, 117, 252, 0.2);
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+.diveInContainer .card .progress-container .step {
+  background-color: #2575fc;
+  height: 6px;
+  width: 20%;
+  border-radius: 0 0 0 5px;
+}
+
+.diveInContainer .card .content h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 500 !important;
+	color:#494949;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.diveInContainer p {
+  margin-top: 0;
+color: #000000 !important;
+}
+
+.diveInContainer ul {
+  margin-top: 0;
+color: #000000 !important;
+}
+
+.diveInContainer li {
+	padding: 5px;
+}
+.diveInContainer .customBtn {
+color: #2575fc !important;
+}
+ .content a {
+  text-decoration: none;
+  position: relative;
+}
+ .content a:before {
+  content: '';
+  position: absolute;
+color: #568fef !important;
+  bottom: 2px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #2575fc;
+  transition: 0.3s;
+}
+ .content a:hover:before {
+  width: 80%;
+}

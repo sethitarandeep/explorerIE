@@ -16,6 +16,7 @@
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="google-site-verification" content="jgbbbiGLIoDIjmL8F6IVnKUS01dY_Rwba43yq_6dWhA" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -23,8 +24,8 @@
 <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
 <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700"-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="wp-content/themes/twentyseventeen/Memory-Game/css/app.css">
-<link rel="stylesheet" href="wp-content/themes/twentyseventeen/assets/css/teamCard.css">
+<!--link rel="stylesheet" href="wp-content/themes/twentyseventeen/Memory-Game/css/app.css">
+<link rel="stylesheet" href="wp-content/themes/twentyseventeen/assets/css/stackedCard.css"-->
 
 
 
