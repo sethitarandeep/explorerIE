@@ -2,19 +2,20 @@
 /**
  * Plugin Name: Elementor Addon Elements
  * Description: Add new elements to Elementor page builder plugin.
- * Plugin URI: https://webtechstreet.com/
+ * Plugin URI: https://www.elementoraddons.com/elements-addon-elements/
  * Author: WebTechStreet
- * Version: 1.4
+ * Version: 1.5.1
  * Author URI: https://webtchstreet.com/
  *
  * Text Domain: wts-eae
+ * Domain Path: inc/languages
  * @package WTS_EAE
  */
 define( 'EAE_FILE', __FILE__ );
 define( 'EAE_URL', plugins_url( '/', __FILE__ ) );
 define( 'EAE_PATH', plugin_dir_path( __FILE__ ) );
 define( 'EAE_SCRIPT_SUFFIX', defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min' );
-define( 'EAE_VERSION', '1.4');
+define( 'EAE_VERSION', '1.5.1');
 
 
 

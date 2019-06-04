@@ -6,6 +6,8 @@
  * @subpackage Twenty_Seventeen
  * @since 1.0
  * @version 1.0
+ * 
+ * <?php echo esc_url( __( '', '' ) ); ?>
  */
 
 ?>
@@ -15,7 +17,7 @@
 		the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 	}
 	?>
-	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyseventeen' ) ); ?>" class="imprint">
-		<?php printf( __( 'Proudly powered by %s', 'twentyseventeen' ), 'WordPress' ); ?>
-	</a>
+	<span class="imprint" style="font-size:14px; align:center;">
+		<?php printf( __( 'Ideated and Developed by %s', 'twentyseventeen' ), 'Team Explorer' ); ?>
+	</span>
 </div><!-- .site-info -->

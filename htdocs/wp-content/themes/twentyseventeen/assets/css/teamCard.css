@@ -1,7 +1,8 @@
-  .teambox{
+/* Team Card CSS*/  
+.teambox{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1 fr));
     grid-gap: 15px;
     margin: 0 auto;
   }
@@ -89,3 +90,9 @@ z-index: 2;
   margin-top: 5px;
 z-index: 2;
    } 
+
+
+
+
+
+

@@ -1780,8 +1780,28 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 /*--------------------------------------------------------------
 13.2 Front Page
 --------------------------------------------------------------*/
+.wrap {
+	max-width: 100%;
+}
+ 
+@media screen and (min-width: 48em) {
+	.wrap {
+		max-width: 100%;
+	}
+}
+ 
+.page.page-one-column #primary {
+	max-width: 100%;
+}
 
+@media screen and (min-width: 30em) {
+	.page-one-column .panel-content .wrap {
+		max-width: 100%;
+	}
+}
 .twentyseventeen-front-page .site-content {
+	
+
 	padding: 0;
 }
 
@@ -4328,4 +4348,22 @@ p > object:only-child {
 	.site-footer {
 		padding: 0;
 	}
+}
+
+.zoom {
+  padding: 40px;
+  background: transparent;
+  transition: transform .2s; /* Animation */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+	cursor: -webkit-zoom-in;
+z-index:999999999;
+}
+
+.zoom:hover {
+z-index:999999999;
+	cursor: -webkit-zoom-in;
+	text-align: justify;
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

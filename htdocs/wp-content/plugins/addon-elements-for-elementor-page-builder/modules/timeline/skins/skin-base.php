@@ -79,7 +79,7 @@ abstract class Skin_Base extends Elementor_Skin_Base {
 		$this->add_control(
 			'global_icon',
 			[
-				'label'     => __( 'Icon', 'Icon Control', 'wts-eae' ),
+				'label'     => __( 'Icon', 'wts-eae' ),
 				'type'      => Controls_Manager::ICON,
 				'default'   => 'fa fa-calendar',
 				'condition' => [
@@ -91,7 +91,7 @@ abstract class Skin_Base extends Elementor_Skin_Base {
 		$this->add_control(
 			'global_icon_image',
 			[
-				'label'       => __( 'Custom Icon', 'Icon Control', 'wts-eae' ),
+				'label'       => __( 'Custom Icon', 'wts-eae' ),
 				'type'        => Controls_Manager::MEDIA,
 				'label_block' => false,
 				'condition'   => [
@@ -103,7 +103,7 @@ abstract class Skin_Base extends Elementor_Skin_Base {
 		$this->add_control(
 			'global_icon_text',
 			[
-				'label'       => __( 'Text', 'Icon Control', 'wts-eae' ),
+				'label'       => __( 'Text', 'wts-eae' ),
 				'type'        => Controls_Manager::TEXT,
 				'label_block' => false,
 				'condition'   => [
@@ -115,7 +115,7 @@ abstract class Skin_Base extends Elementor_Skin_Base {
 		$this->add_control(
 			'global_icon_view',
 			[
-				'label'   => __( 'View', 'Icon Control', 'wts-eae' ),
+				'label'   => __( 'View', 'wts-eae' ),
 				'type'    => Controls_Manager::SELECT,
 				'options' => [
 					'default' => __( 'Default', 'wts-eae' ),
@@ -129,7 +129,7 @@ abstract class Skin_Base extends Elementor_Skin_Base {
 		$this->add_control(
 			'global_icon_shape',
 			[
-				'label'     => __( 'Shape', 'Icon Control', 'wts-eae' ),
+				'label'     => __( 'Shape', 'wts-eae' ),
 				'type'      => Controls_Manager::SELECT,
 				'options'   => [
 					'circle' => __( 'Circle', 'wts-eae' ),
@@ -1319,7 +1319,18 @@ abstract class Skin_Base extends Elementor_Skin_Base {
 					if ( $item['item_date'] !== '' ) {
 						?>
                         <div <?php echo $this->parent->get_render_attribute_string( 'meta' ); ?>>
-							<?php echo $item['item_date'] ?>
+	                        <?php
+                                $wpDateFormat = get_option('date_format');
+                                $item_date = strtotime($item['item_date']);
+
+                                $date_formated = date($wpDateFormat,$item_date);
+                                if(date($wpDateFormat, strtotime($date_formated) ) == date($wpDateFormat, strtotime('01/01/70'))){
+                                    echo $item['item_date'];
+                                }
+                                else{
+                                    echo $date_formated;
+                                }
+	                        ?>
                         </div>
 						<?php
 					}
@@ -1359,7 +1370,18 @@ abstract class Skin_Base extends Elementor_Skin_Base {
 										if ( $item['item_date'] !== '' ) {
 											?>
                                             <div class="eae-tl-item-meta-inner">
-												<?php echo $item['item_date'] ?>
+	                                            <?php
+                                                    $wpDateFormat = get_option('date_format');
+                                                    $item_date = strtotime($item['item_date']);
+
+                                                    $date_formated = date($wpDateFormat,$item_date);
+                                                    if($date_formated == '01/01/1970'){
+                                                        echo $item['item_date'];
+                                                    }
+                                                    else{
+                                                        echo $date_formated;
+                                                    }
+	                                            ?>
                                             </div>
 											<?php
 										}

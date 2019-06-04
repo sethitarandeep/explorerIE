@@ -1,12 +1,12 @@
 jQuery(document).ready(function() {
-    var content = jQuery('.content');
+    var content = jQuery('.diveIncontent');
     var currentItem = content.filter('.diveActive');
     var steps = jQuery('.card').filter('.steps');
     var inactive1 = jQuery('.inactive-1');
     var inactive2 = jQuery('.inactive-2');
 	var stepCounter = 20;
 
-    jQuery('.button').click(function() {
+    jQuery('.customBtn').click(function() {
         var nextItem = currentItem.next();
         var lastItem = content.last();
         var contentFirst = content.first();

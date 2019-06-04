@@ -630,7 +630,7 @@ function twentyseventeen_scripts() {
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'stackedCard', get_theme_file_uri( '/assets/css/stackedCard.css' ));
+	//wp_enqueue_style( 'stackedCard', get_theme_file_uri( '/assets/css/stackedCard.css' ));
 	wp_enqueue_style( 'app', get_theme_file_uri( '/Memory-Game/css/app.css' ));
 	wp_enqueue_style( 'teamCard', get_theme_file_uri( '/assets/css/teamCard.css' ));
 	// Theme block stylesheet.
@@ -675,7 +675,7 @@ function twentyseventeen_scripts() {
 
 	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
 	
-	wp_enqueue_script( 'stackedCard', get_theme_file_uri( '/assets/js/stackedCard.js' ) );
+	//wp_enqueue_script( 'stackedCard', get_theme_file_uri( '/assets/js/stackedCard.js' ) );
 	/*wp_enqueue_script( 'app', get_theme_file_uri( '/Memory-Game/js/app.js' ) );*/
 
 

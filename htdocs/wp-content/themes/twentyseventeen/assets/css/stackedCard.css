@@ -10,7 +10,7 @@
   margin: 0 auto ;
 }
 
-.diveInContainer .content {
+.diveInContainer .diveIncontent {
   position: absolute;
 	display:none;
   opacity: 0;
@@ -67,22 +67,29 @@
   border-radius: 0 0 0 5px;
 }
 
-.diveInContainer .card .content h2 {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 500 !important;
+.diveIncontent h2 {
+	padding-bottom: 40px;
+}
+.diveInContainer .card .diveInButton {
+	position:absolute;
+}
+
+.diveInContainer .card .diveIncontent h2 {
+  /*font-family: 'Titillium Web', sans-serif;*/
+  /*font-weight: 500 !important;*/
 	color:#494949;
   font-size: 3rem;
   margin: 0;
 }
 
-.diveInContainer p {
+.diveInContainer .diveIncontent p {
   margin-top: 0;
-color: #000000 !important;
+color: #565353 !important;
 }
 
-.diveInContainer ul {
+.diveInContainer .diveIncontent ul {
   margin-top: 0;
-color: #000000 !important;
+color: #565353 !important;
 }
 
 .diveInContainer li {
@@ -91,11 +98,11 @@ color: #000000 !important;
 .diveInContainer .customBtn {
 color: #2575fc !important;
 }
- .content a {
+.diveIncontent a {
   text-decoration: none;
   position: relative;
 }
- .content a:before {
+ .diveIncontent a:before {
   content: '';
   position: absolute;
 color: #568fef !important;
@@ -105,6 +112,6 @@ color: #568fef !important;
   border-bottom: 2px solid #2575fc;
   transition: 0.3s;
 }
- .content a:hover:before {
+.diveIncontent a:hover:before {
   width: 80%;
 }
